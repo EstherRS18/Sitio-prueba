@@ -20,7 +20,21 @@
         <span>Hora</span>
         <input type="time" name="" id="time">
     </label>
+    <label for="submit">
+        <input type="submit" value="Enviar" >
+    </label>
  </form>
 
+ <form> 
+<tr>
+    <td>
+        <label for="email">Correo electronico</label>
+    </td>
+    <td>
+        <input type="email" name="email" id="email" placeholder="Ingrese correo electronico" size="50" maxlength="50" minlength="7" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Ingrese caractéres válidos para el correo" required> 
+        <button type="submit">Enviar</button>
+    </td>
+</tr>
+</form>
 </body>
 </html>
