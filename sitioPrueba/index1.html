@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form>
+        <table border="0" align="center">
+            <caption>
+                Planes de turismo
+            </caption>
+            <tr>
+                <td>
+                    <label for="fullname">Nombre Completo</label>
+                </td>
+                <td>
+                    <input type="text" id="fullname" placeholder="Ingrese nombre completo" size="30" maxlength="30"
+                        minlength="6" pattern="[A-Za-z ]+" autocomplete="on"
+                        required title="El nombre completo es obligatorio. Ingrese solo letras y/o espacios">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="iduser">Identificación</label>
+                </td>
+                <td>
+                    <input type="number" id="iduser" placeholder="Ingrese su identificación" size="30" maxlength="15"
+                        minlength="4" required autocomplete="off">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Email">Email</label>
+                </td>
+                <td>
+                    <input type="email" id="Email" placeholder="Ingrese su email" size="30" maxlength="30" 
+                        required 
+                        autocomplete="off"
+                        autocapitalize="off"
+                        pattern="(?![.-])((?![.-][.-])[a-zA-Z\d.-]){0,63}[a-zA-Z\d]@((?!-)((?!--)[a-zA-Z\d-]){0,63}[a-zA-Z\d]\.){1,2}([a-zA-Z]{2,14}\.)?[a-zA-Z]{2,14}">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone">Telefono</label>
+                </td>
+                <td>
+                    <input type="tel" id="phone" placeholder="Ingrese su telefono" size="30" maxlength="15"
+                        minlength="7" pattern="[0-9]{12}" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <Label for="Destination">Destino 1</Label>
+                </td>
+                <td>
+                    <select name="Destination" id="Destination">
+                        <option value="none" >Seleccione un destino</option>
+                        <option value="Medellín">Medellín</option>
+                        <option value="Cali">Cali</option>
+                        <option value="Cartagena">Cartagena</option>
+                        <option value="Pasto">Pasto</option>
+                        <option value="Bogotá">Bogotá</option>
+                        <option value="SantaMarta">Santa Marta</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <Label for="Destination2">Destino 2 (Opcional)</Label>
+                </td>
+                <td>
+                    <select name="Destination2" id="Destination2">
+                        <option value="None">Seleccione un destino</option>
+                        <option value="Medellín">Medellín</option>
+                        <option value="Cali">Cali</option>
+                        <option value="Cartagena">Cartagena</option>
+                        <option value="Pasto">Pasto</option>
+                        <option value="Bogotá">Bogotá</option>
+                        <option value="SantaMarta">Santa Marta</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Date_Leave" id="Date_Leave">Fecha de salida</label>
+                </td>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Date_Return" id="Date_Return">Fecha de regreso</label>
+                </td>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="PeopleQuantity" id="PeopleQuantity">Número de personas</label>
+                </td>
+                <td>
+                    <input type="number" min="0">
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <label for="Payment" id="Payment">Forma de pago</label>
+                </td>
+                <td>
+                    <input type="radio" name="Payment" id="Cash">Efectivo <br>
+                    <input type="radio" name="Payment" id="CreditCard">Tarjeta Credito <br>
+                    <input type="radio" name="Payment" id="DebitCard">Tarjeta Debito <br>
+                    <input type="radio" name="Payment" id="PSE">PSE
+                </td>
+            </tr>
+            <tr>
+                <td valign="top">
+                    <label for="option" id="option">Adicionales</label>
+                </td>
+                <td>
+                    <input type="radio" name="option" id="Caminata">Caminata <br>
+                    <input type="radio" name="option" id="Tour por ciudad">Tour poe ciudad <br>
+                    <input type="radio" name="option" id="Visitar isla">visitar isla <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Input Enviar">
+                    <button type="submit" id="send" name="send">
+                        Button Enviar
+                    </button>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="reset" value="Input Borrar">
+                    <button type="reset" id="reset" name="reset">
+                        Button Borrar
+                    </button>
+                </td>
+            </tr>
+           
+        </table>
+    </form>
+</body>
+
+</html>

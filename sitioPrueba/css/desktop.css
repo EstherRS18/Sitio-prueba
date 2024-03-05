@@ -1,0 +1,49 @@
+footer {
+    overflow: hidden;
+}
+
+nav {
+    position: relative; 
+}
+
+nav img {
+    width: 100%; 
+    display: block; /* Asegura que la imagen sea un bloque para poder aplicar márgenes automáticos */
+    margin: 0 auto;
+    max-width: 70px; 
+}
+
+.first-section p {
+display: flex;
+width: 50%;
+margin: 0 auto;
+flex-wrap: wrap;
+}
+
+.third-section .product {
+    margin: 40px;
+}
+
+.fourth-container {
+    flex-direction: row;
+}
+
+.fourth-container .fourth-parrafo {
+    width: 18%;
+    margin: 30px;
+    max-width: 150px;
+}
+
+.customer-service {
+   margin: 0px 30px;
+   margin-top: 40px;
+}
+
+.customer-service hr{
+ width: 95%; 
+ 
+}
+
+.customer-service1_icono {
+    left: 700px;
+}

@@ -4,34 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Kalam:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/styleflor.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 620px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 900px)">
 </head>
 <body>
   <header>
     <nav>
-        <table>
-        <thead>
-            <tr>
-                <th>Tienda &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
-                <th><a href="./florcontac.html" target="_blank">Contáctanos</a></th>
-                <th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Iniciar sesión &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
-                <th><a href="./catalogoflor.html" target="_blank">Catálogo</a></th>
-            </tr>
-        </thead>
-    </table>
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="hamburger">&#9776;</label>
+        <ul class="menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Contactenos</a></li>
+            <li>
+              <a href="#">Inicia sesion</a>
+              <span class="icono user"></span>
+            </li>
+            <li>
+              <a href="#">Registrate</a>
+              <span class="icono registrate"></span>
+            </li>
+        </ul>
+        <img src="./images/meraki2.jpg" alt="">
     </nav>
-    <hr>
-   </header>
-    <main>
-        <center>
-        <h1>Meraki el arte de compartir</h1>
+  </header>
+     <main>
+        <section class="first-section">
+        <h1>Meraki<span class="small"> el arte de compartir</span></h1>
          <p>Somos la mejor opción en anchetas, sorpresas, desayunos, flores y regalos para ese momento especial, !Siempre a la medida de tu bolsillo!. Dejanos saber cual es el presupuesto con el cual cuentas para esta ocasión y te daremos diferentes alternativas para sorprender</p>
-         <br>
-         <br>
-        </center>
-        <section>
-            <center>
-            <h1>¿Cual es tu presupuesto</h1>
-            <input list="Detalles" placeholder="Ingrese su precupuesto">
+        </section>
+         <section class="second-section">
+            <h1>¿Cual es tu presupuesto?</h1>
+            <input list="Detalles" placeholder="Ingrese su presupuesto">
             <datalist id="Detalles">
                 <option value="50.000"></option>
                 <option value="100.000"></option>
@@ -40,62 +45,78 @@
                 <option value="400.000"></option>
             </datalist>    
         </section>
-        <br>
-        <br>
-        <section>
-            <hr>
-            <center>
-            <h3>¡Tenemos estas opciones para ti!</h3>
-             <br>
-            <figure>
-                <img src="./images/arreglo1.jpg" alt="" width="40%"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <img src="./images/peluche.jpg" alt="" width="40.5%">
-            </figure>
+
+        <div class="section-oferta">
+          <p>¡Tenemos estas opciones para ti!</p>
+      </div>
+
+        <section class="third-section">
+        <article class="product">
+            <img src="./images/cajagirasol.jpg" alt="">
+            <h2>Ancheta con girasoles</h2>
+            <p class="product__price">$280.000</p>
+        </article>
+        <article class="product">
+            <img src="./images/girasol.jpg" alt="">
+            <h2>Caja con chocolates</h2>
+            <p class="product__price">$110.000</p>
+        </article>
+        <article class="product">
+          <img src="./images/anchetavino.jpg" alt="">
+          <h2>Ancheta con vino</h2>
+          <p class="product__price">$120.000</p>
+        </article>
+        <article class="product">
+          <img src="./images/caja.jpg" alt="">
+          <h2>Cajita cariño</h2>
+          <p class="product__price">$110.000</p>
+       </article>
+       <article class="product">
+         <img src="./images/anchetapeluche.jpeg" alt="">
+         <h2>Ancheta con peluche</h2>
+         <p class="product__price">$80.000</p>
+     </article> 
+     <article class="product">
+      <img src="./images/arreglo1.jpg" alt="">
+      <h2>Declaración de amor</h2>
+      <p class="product__price">$400.000</p>
+  </article> 
         </section>
-         <br>
-        <div>
-            <strong><p>Mira todas nuestra opciones aqui: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Tienda</p></strong>
-        </div>
-        <hr>
+       <div class="fourth-container">
+       <h3>Mira todas nuestras opciones aqui:</h3>
+       <p class="fourth-parrafo">Tienda</p>
+     </div>
     </main>
-    <br>
     <footer> 
-      <center>
-      <table>
-        <thead>
-            <tr>
-                <th> 100% seguro &nbsp&nbsp&nbsp | &nbsp&nbsp</th>
-                <th>VISA <img src="./images/mastercad.png" alt="" width="40px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th> 
-                <th>PSE <img src="./images/pse.jpg" alt="" width="50px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
-                <th>NEQUI <img src="./images/nequi.png" alt="" width="40px">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
-                <th>BANCOLOMBIA <img src="./images/Bancolombi.jpg" alt="" width="80px"></th>
-            </tr>
-        </thead>
-      </table>
-      </center>
-      <br>
-      <section> 
-       <table>
-        <thead>
-            <tr>
-                <th>Servicio al cliente   &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                <th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Siguenos en 
-                 <br> 
-                 <br>
-                 
-                <img src="./images/facebook.jpg" alt="" width="10%">
-                <img src="./images/intagram.jpg" alt="" width="10%">
-            </th>
-            </tr>
-        </thead>
-       </table>
-        <strong><p>Horario de atención oficina y entregas</p></strong>
-        <p>Lunes a sabado - 7:00 AM a 8:00 PM</p>
-        <p>Domingo: Solo entregas programadas de 7:00 AM a 5:00 PM</p>
+    <div class="payment-types">
+        <p class="payment"> Pago<span class="secure">100% seguro</span> |</p> 
+    <div class="icono">
+       <span class="icono-payment visa"></span>
+       <span class="icono-payment mastercard"></span>
+       <span class="icono-payment pse"></span>
+       <span class="icono-payment bancolombia"></span>
+    </div>  
+    </div>
+    <section class="customer-service">
+      <hr>
+      <h3>Servicio al cliente</h3>
+      <strong><p>Horario de atención</p></strong>
+       <p>Lunes a Sábado - 07:00 am  a 08:00 pm 
+          <br>
+          Domingo - Solo entregas programadas de
+          <br>
+          07:00 am  a 05:00 pm </p>
+          <div class="customer-service1">
+            <strong>Horario de WhatsApp</strong>
+            <p>Todo los días de 7:00 am a 8:00 pm </p>
+            <div class="customer-service1_icono">
+            <h3>Siguenos en</h3>
+            <span class="span-facebook"></span>
+            <span class="span-instagram"></span>
+          </div>
+        </div>
         
-        <strong><p>Horario de whatsapp</p></strong>
-        <p>Todos los dias de 7:00 AM a 8:00 PM</p>
-      </section>
+    </section>
     </footer>
 </body>
 </html>

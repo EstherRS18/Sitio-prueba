@@ -1,0 +1,82 @@
+nav {
+    display: flex;
+    justify-content: center; 
+    font-family: 'Inter', sans-serif;
+}
+
+nav img {
+  width: 70px;
+   margin-top: 10px;
+   border-radius: 70px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    font-size: 1.4rem;
+    margin: 0 10px;
+}
+
+.menu .icono {
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/user.png");
+    background-size: cover;
+    background-position: center;
+} 
+
+.menu .registrate {
+    background-image: url("../images/registrarte.jpg");
+}
+
+.hamburger {
+        display: none; 
+    }
+
+.third-section  {
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.customer-service {
+    position: relative;;
+}
+
+.fourth-container .fourth-parrafo{
+ max-width: 230px;
+}
+.customer-service1_icono {
+  display: inline-block;
+   position: absolute;
+   left: 530px;
+   top: 30px;
+   right: 0;
+}
+
+.customer-service1_icono .span-facebook {
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.customer-service1_icono .span-instagram{
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.tablet-desktop-link {
+        display: inline-block; 
+    }
