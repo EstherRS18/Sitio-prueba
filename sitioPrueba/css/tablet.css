@@ -47,6 +47,26 @@ nav img {
     width: 100%;
 }
 
+.payment-types {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    align-items: center;
+    width: 100%;
+}
+
+.payment-types .icono {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    min-width: 220px;
+    margin-top: 0;
+}
+
+.payment-types .payment {
+    width: 40%;
+}
+
 .customer-service {
     position: relative;;
 }
