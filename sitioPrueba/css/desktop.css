@@ -24,6 +24,17 @@ flex-wrap: wrap;
     margin: 40px;
 }
 
+.third-section .third-section_contac{
+ height: 580px;
+ width: 80%;
+ font-size: 1.4rem;
+}
+
+.third-section_contac h1 {
+    margin :50px;
+   
+}
+
 .fourth-container {
     flex-direction: row;
 }
@@ -36,7 +47,7 @@ flex-wrap: wrap;
 
 .customer-service {
    margin: 0px 30px;
-   margin-top: 40px;
+   margin-top: 20px;
 }
 
 .customer-service hr{

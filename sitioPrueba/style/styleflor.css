@@ -246,6 +246,45 @@ nav img {
    
 }
 
+.third-section .third-section_contac {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    min-width: 260px;
+    height: 350px;
+    background-color: #FFEAEAB2;
+    text-align: center;
+}
+
+.third-section_contac .contac_title {
+   padding: 30px;
+   font-weight: 500;
+}
+
+.third-section_contac input {
+    background-color:#ffb3b3 ;   
+    border: none;
+    border-radius: 5px;
+    height: 22px;
+    margin-left: 20px;
+}
+
+.third-section_contac .contac-title_input {
+  text-align: left;
+  margin:0 auto;
+}
+
+.third-section_contac button {
+    margin-top: 40px;
+    width: 50%;
+    height: 25px;
+    align-self: center;
+    border: none;
+    border-radius: 7px;
+    background-color:#ffb3b3;
+    max-width: 200px;
+}
 .product img {
     background-position: center;
     background-size: cover;

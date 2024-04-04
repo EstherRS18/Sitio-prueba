@@ -4,68 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&family=Kalam:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/styleflor.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 620px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 900px)">
 </head>
 <body>
   <header>
     <nav>
-      <table>
-        <thead>
-            <tr>
-                <th><a href="./Flores.html">Tienda </th></a>
-                <th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspContáctanos</th>
-                <th>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Iniciar sesión &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</th>
-                <th><a href="./catalogoflor.html">Catálogo</th></a>
-            </tr>
-        </thead>
-    </table>
+        <input type="checkbox" id="toggle">
+        <label for="toggle" class="hamburger">&#9776;</label>
+        <ul class="menu">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Contactenos</a></li>
+            <li>
+              <a href="#">Inicia sesion</a>
+              <span class="icono user"></span>
+            </li>
+            <li>
+              <a href="#">Registrate</a>
+              <span class="icono registrate"></span>
+            </li>
+        </ul>
+        <img src="./images/meraki2.jpg" alt="">
     </nav>
-    <hr>
-   </header>
-   <main>
-    <div>
-        <h2>Contactenos</h2>
-        <form action="#" method="post">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-        <br>
-        <br>
-             <label for="ciudad">Ciudad</label>
-            <input type="text" id="ciudad" name="ciudad" required>
-        <br>
-        <br>
-             <label for="telefono">Teléfono</label>
-             <input type="tel" id="telefono" name="telefono" pattern="[0-9]+" required title="Ingresa solo números">
-        <br>
-        <br>
-            <label for="email">E-mail:</label>
-            <input type="email" name="email" id="email" size="50" maxlength="50" minlength="7" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Ingrese caractéres válidos para el correo" required> 
-        <br>
-        <br>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="2" required></textarea>
-        <br>
-        <br>
-             <label for="submit">
-              <button type="submit">Enviar</button>
-             </label>
-        </form>
-    </div>
-   </main>
+  </header>
+     <main>
+        <section class="first-section_catalogo">
+        <h1>Te contactamos!</h1>
+        </section>
+         <section class="second-section_catalogo1">
+        </section>
+        <section class="third-section">
+          
+        <article class="third-section_contac">
+            <h1 class="contac_title">Dejanos tus datos para colocarnos en contacto</h1>
+          <label for="nombre">Nombre:
+            <input type="text" id="nombre" name="nombre" required></label> 
+            <br>
+          <label for="email">Correo:
+            <input type="email" id="email" name="email" required></label>
+            <br>
+            <label for="celular"> Celular:
+            <input type="text" id="celular" name="celular"></label>
+            <br>
+          <label class="contac-title_input" for="interes">Te interesa:
+           <input type="radio" name="interes" value="acnhetas"> Acnhetas
+           <input type="radio" name="interes" value="flores"> Flores</label>
+            <button type="submit">Enviar</button>
+        </article>
+        
+        </section>
+    </main>
     <footer> 
-    
-      <br>
-     
-        <b><p>Escríbenos tus dudas y preguntas</p></b>
-        <strong><p>Horario de atención</p></strong>
-        <p>Lunes a Sábado: 07:00 am  a 08:00 pm 
+    <div class="payment-types">
+        <p class="payment"> Pago<span class="secure">100% seguro</span> |</p> 
+    <div class="icono">
+       <span class="icono-payment visa"></span>
+       <span class="icono-payment mastercard"></span>
+       <span class="icono-payment pse"></span>
+       <span class="icono-payment bancolombia"></span>
+    </div>  
+    </div>
+    <section class="customer-service">
+      <hr>
+      <h3>Servicio al cliente</h3>
+      <strong><p>Horario de atención</p></strong>
+       <p>Lunes a Sábado - 07:00 am  a 08:00 pm 
           <br>
-          Domingo: 07:00 am  a 05:00 pm </p>
-        <p>Comunicate con nosostros en nuestra linea de whatsapp</p>
-        <a href="https://web.whatsapp.com/" target="_blank">whatsapp
-          <img src="./images/WhatsApp.png" alt="" width="">
-        </a>
-
-      </section>
+          Domingo - Solo entregas programadas de
+          <br>
+          07:00 am  a 05:00 pm </p>
+          <div class="customer-service1">
+            <strong>Horario de WhatsApp</strong>
+            <p>Todo los días de 7:00 am a 8:00 pm </p>
+            <div class="customer-service1_icono">
+            <h3>Siguenos en</h3>
+            <span class="span-facebook"></span>
+            <span class="span-instagram"></span>
+          </div>
+        </div>
+        
+    </section>
     </footer>
 </body>
 </html>
